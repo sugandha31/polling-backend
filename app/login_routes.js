@@ -28,9 +28,6 @@ module.exports = function(app){
     //use mongoose to get all polls(docs) in the database
             //TRy to implement login here
             //hint : findone query
-            // var new_profile=new profile();
-            // new_profile.email=req.body.email;
-            // new_profile.password=req.body.password;
             
             
     });

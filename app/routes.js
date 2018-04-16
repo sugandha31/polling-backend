@@ -1,5 +1,5 @@
 //app/routes.js
-//grab the nerd model(document) we just created
+//grab the poll model(document) we just created
 var poll = require('./models/poll');
 
 module.exports = function(app){
@@ -24,7 +24,7 @@ module.exports = function(app){
           console.log("saved"+poll);
           res.json(poll);
       });
-
+      
     });
 
     app.get('/api/poll', function(req,res){

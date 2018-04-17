@@ -36,13 +36,12 @@ module.exports = function(app){
             console.log(poll);
             if(err)
                 res.send(err);
-            res.json(poll); //returns all nerds in json format
+            res.json(poll); //returns all polls in json format
         });
     });
 
     //route to handle creating goes here(app.post)
-    //route to handle delete goes here(app.delete)
-
+    //route to handle delete goes here(app.delete
     //frontend routes========================
 
     //route to handle all angular requests

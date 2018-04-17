@@ -29,7 +29,16 @@ module.exports = function(app){
             //TRy to implement login here
             //hint : findone query
             
-            
+        var new_profile=new profile();
+        new_profile.email=req.body.email;
+        new_profile.password=req.body.password;
+        profile.findOne({"email":new_profile.email}, function(err, result) {
+          if (err) {
+            res.json({"message":"error","error":"true"});
+          }
+          console.log(result);
+          res.json({"message":result,"error":"false"});
+        });
     });
 
     //route to handle delete goes here(app.delete)

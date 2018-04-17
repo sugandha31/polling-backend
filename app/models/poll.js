@@ -1,9 +1,9 @@
-//app/models/nerd.js
+//app/models/poll.js
 //grab the mongoose module
 
 var mongoose = require('mongoose');
 
-//define our nerd model
+//define our poll model
 
 module.exports = mongoose.model('poll',{    //Poll- name of a document
     user_token : {type: String, default:''}, 

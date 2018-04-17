@@ -1,9 +1,9 @@
-//app/models/nerd.js
+//app/models/profile.js
 //grab the mongoose module
 
 var mongoose = require('mongoose');
 
-//define our nerd model
+//define our profile model
 
 module.exports = mongoose.model('profile',{    //Profile- name of a document
     user_token : {type: String, default:''}, 
